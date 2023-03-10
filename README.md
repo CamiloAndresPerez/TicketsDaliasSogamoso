@@ -8,12 +8,12 @@ This app can do:
 - Allows a user to do login and save his personal notes
 
 
-![](docs/screenshot.png)
+
 
 ### Installation
 
-```sh
-git clone https://github.com/FaztTech/nodejs-notes-app
+
+
 cd nodejs-notes-app
 npm i
 npm run dev # run in development mode
