@@ -1,6 +1,6 @@
 # Notes App NodeMongo
 
-This is a basic Web application to manage simple Notes on the web using Javascript Technologies like Nodejs, Mongodb, and other related technologies. Tecnically this is a Multi-Page Application using Handlebars as template engine.
+Project application for the company "Dalias Pasteleria & Panaderia" using Javascript technologies such as Nodejs, Mongodb and other related techniques. This is an application created for the existing problem within the real business and its solution through this study. It uses Handlebars as a template mechanism.
 
 This app can do:
 
@@ -11,7 +11,6 @@ This app can do:
 
 
 ### Installation
-
 
 
 cd nodejs-notes-app
