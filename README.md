@@ -1,3 +1,6 @@
+
+NOTES APP FOR DALIAS 
+
 Project application for the company "Dalias Pasteleria & Panaderia" using Javascript technologies such as Nodejs, Mongodb and other related techniques. This is an application created for the existing problem within the real business and its solution through this study. It uses Handlebars as a template mechanism.
 
 This app can do:
