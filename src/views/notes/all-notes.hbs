@@ -7,6 +7,8 @@
           {{ title }} <a href="/notes/edit/{{_id}}"><i class="fas fa-edit"></i></a>
         </h4>
         <p>{{ description }} </p>
+        <hr class="my-4" />
+        <p>{{ createdAt }}</p>
         <!-- DELETE REQUEST -->
         <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
           <input type="hidden" name="_method" value="DELETE">
@@ -17,11 +19,14 @@
   </div>
   {{else}}
   <div class="card mx-auto">
-    <div class="card-body">
-      <h1>Hello {{user.name}}</h1>
-      <p clsss="lead">There are not Notes yet.</p>
-      <a href="/notes/add" class="btn btn-success btn-block">Create One!</a>
-    </div>
+    
+      <div class="card-body">
+        <h1>Hola {{ users.name }}</h1>
+        <p clsss="lead">No tienes ningun ticket todavia.</p>
+        <a href="/notes/add" class="btn btn-success btn-block">¡Crea Uno!</a>
+      </div>
+    
+    
   </div>
   {{/each}}
 </div>
