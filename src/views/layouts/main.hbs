@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Aplicación Tickets</title>
-    <!-- BOOTSTRAP - BOOTSWATCH THEME - COSMOS -->
-    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body>
 
-    {{> navigation }}
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicación Tickets</title>
+  <!-- BOOTSTRAP - BOOTSWATCH THEME - COSMOS -->
+  <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+</head>
 
-    <main class="container p-5">
-      <div class="col-md-4 offset-md-6">
-        {{> messages }}
-        {{> errors }}
-      </div>
-      {{{ body }}}
-    </main>
+<body>
 
-    <!-- Scritps -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  {{> navigation }}
+
+  <main class="container p-5">
+    <div class="col-md-4 offset-md-6">
+      {{> messages }}
+      {{> errors }}
+    </div>
+    {{{ body }}}
+  </main>
+
+  <!-- Scritps -->
+  
+<script>
+  const myInput = document.getElementById('1');
+  const myButton = document.getElementById('Button1');
+  
+  myButton.addEventListener('click', () => {
+    myInput.value = 'MESA 1';
+  });
+
+  const myButton2 = document.getElementById('Button2');
+
+  myButton2.addEventListener('click', () => {
+    myInput.value = 'MESA 2';
+  });
+  const myButton3 = document.getElementById('Button3');
+
+  myButton3.addEventListener('click', () => {
+    myInput.value = 'MESA 3';
+  });
+  const myButton4 = document.getElementById('Button4');
+
+  myButton4.addEventListener('click', () => {
+    myInput.value = 'MESA 4';
+  });
+
+  const myButton5 = document.getElementById('Button5');
+
+  myButton5.addEventListener('click', () => {
+    myInput.value = 'MESA 5';
+  });
+
+  const myButton6 = document.getElementById('Button6');
+
+  myButton6.addEventListener('click', () => {
+    myInput.value = 'MESA 6';
+  });
+
+  const myButton7 = document.getElementById('Button7');
+
+  myButton7.addEventListener('click', () => {
+    myInput.value = 'MESA 7';
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

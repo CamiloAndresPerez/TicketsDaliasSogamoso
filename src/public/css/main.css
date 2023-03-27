@@ -17,12 +17,11 @@ body {
   background: #BA8B02;
 }
 .btn {
-  
-  
-  
+ 
   text-decoration: none;
   border-radius: 15px;
   border: black;
+  margin-top: 8px;
 }
 .btn:hover{
   background-color: #f59218;

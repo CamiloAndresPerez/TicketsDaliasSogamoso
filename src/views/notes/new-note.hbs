@@ -1,32 +1,51 @@
-<div class="col-md-4 mx-auto">
+<div class="col-md-7 mx-auto p-1 bg-primary d-inline-block">
   <div class="card">
     <div class="card-header bg-dark text-center">
-      <h3 class="text-white">New Note</h3>
+      <button id="Button1" type="button" class="btn btn-primary">Mesa 1</button>
+      <button id="Button2" type="button" class="btn btn-primary">Mesa 2</button>
+      <button id="Button3" type="button" class="btn btn-primary">Mesa 3</button>
+      <button id="Button4" type="button" class="btn btn-primary">Mesa 4</button>
+      <button id="Button5" type="button" class="btn btn-primary">Mesa 5</button>
+      <button id="Button6" type="button" class="btn btn-primary">Mesa 6</button>
+      <button id="Button7" type="button" class="btn btn-primary">Mesa 7</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-dark text-center">
+      <h3 class="text-white" style="margin-top: 10px;">Nuevo pedido</h3>
     </div>
     <div class="card-body text-right">
       <form action="/notes/new-note" method="POST">
         <div class="mb-3">
           <label for="title">Title:</label>
-          <input
-            type="text"
-            name="title"
-            class="form-control"
-            placeholder="Title"
-            autofocus
-          />
+          <input id="1" type="text" name="title" class="form-control" placeholder="Title" />
         </div>
         <div class="mb-3">
           <label for="description">Description:</label>
-          <textarea
-            name="description"
-            class="form-control"
-            placeholder="Description"
-          ></textarea>
+          <textarea name="description" class="form-control" placeholder="Description"></textarea>
         </div>
         <button class="btn btn-primary w-100" type="submit">
           Save
         </button>
       </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4 mx-auto p-1 bg-primary d-inline-block">
+  <div class="card">
+    <div class="card-header bg-dark text-center">
+      <h3 class="text-white" style="margin-top: 10px;">Combos Desayunos</h3>
+      <button id="Button1" type="button" class="btn btn-primary">Andino</button>
+      <button id="Button2" type="button" class="btn btn-primary">Boyacense</button>
+      <button id="Button3" type="button" class="btn btn-primary">Rolo</button>
+      <button id="Button4" type="button" class="btn btn-primary">Americano</button>
+      <button id="Button5" type="button" class="btn btn-primary">Cereal de cabaña</button>
+      <button id="Button6" type="button" class="btn btn-primary">Santafereño</button>
+      <button id="Button7" type="button" class="btn btn-primary">Campestre</button>
+      <button id="Button8" type="button" class="btn btn-primary">Bistec</button>
+      <button id="Button9" type="button" class="btn btn-primary">Granja</button>
     </div>
   </div>
 </div>
