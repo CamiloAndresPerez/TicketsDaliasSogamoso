@@ -1,51 +1,282 @@
-<div class="col-md-7 mx-auto p-1 bg-primary d-inline-block">
+<div class="col-md-4 mx-auto p-1 bg-primary d-inline-block">
   <div class="card">
-    <div class="card-header bg-dark text-center">
-      <button id="Button1" type="button" class="btn btn-primary">Mesa 1</button>
-      <button id="Button2" type="button" class="btn btn-primary">Mesa 2</button>
-      <button id="Button3" type="button" class="btn btn-primary">Mesa 3</button>
-      <button id="Button4" type="button" class="btn btn-primary">Mesa 4</button>
-      <button id="Button5" type="button" class="btn btn-primary">Mesa 5</button>
-      <button id="Button6" type="button" class="btn btn-primary">Mesa 6</button>
-      <button id="Button7" type="button" class="btn btn-primary">Mesa 7</button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header bg-dark text-center">
-      <h3 class="text-white" style="margin-top: 10px;">Nuevo pedido</h3>
-    </div>
-    <div class="card-body text-right">
-      <form action="/notes/new-note" method="POST">
-        <div class="mb-3">
-          <label for="title">Title:</label>
-          <input id="1" type="text" name="title" class="form-control" placeholder="Title" />
-        </div>
-        <div class="mb-3">
-          <label for="description">Description:</label>
-          <textarea name="description" class="form-control" placeholder="Description"></textarea>
-        </div>
-        <button class="btn btn-primary w-100" type="submit">
-          Save
-        </button>
-      </form>
+    <div class="card-header text-center" style="background-color:#877771">
+      <h3 class="text-white" style="margin-top: 10px;">Combos Desayunos</h3>
+      <div class="card-body text-center">
+        <button id="combo1" type="button" class="btn btn-primary">Andino</button>
+        <button id="combo2" type="button" class="btn btn-primary">Boyacense</button>
+        <button id="combo3" type="button" class="btn btn-primary">Rolo</button>
+        <button id="combo4" type="button" class="btn btn-primary">Americano</button>
+        <button id="combo5" type="button" class="btn btn-primary">Cereal de cabaña</button>
+        <button id="combo6" type="button" class="btn btn-primary">Santafereño</button>
+        <button id="combo7" type="button" class="btn btn-primary">Campestre</button>
+        <button id="combo8" type="button" class="btn btn-primary">Bistec</button>
+        <button id="combo9" type="button" class="btn btn-primary">Granja</button>
+      </div>
+
     </div>
   </div>
 </div>
+
 
 
 <div class="col-md-4 mx-auto p-1 bg-primary d-inline-block">
   <div class="card">
     <div class="card-header bg-dark text-center">
-      <h3 class="text-white" style="margin-top: 10px;">Combos Desayunos</h3>
-      <button id="Button1" type="button" class="btn btn-primary">Andino</button>
-      <button id="Button2" type="button" class="btn btn-primary">Boyacense</button>
-      <button id="Button3" type="button" class="btn btn-primary">Rolo</button>
-      <button id="Button4" type="button" class="btn btn-primary">Americano</button>
-      <button id="Button5" type="button" class="btn btn-primary">Cereal de cabaña</button>
-      <button id="Button6" type="button" class="btn btn-primary">Santafereño</button>
-      <button id="Button7" type="button" class="btn btn-primary">Campestre</button>
-      <button id="Button8" type="button" class="btn btn-primary">Bistec</button>
-      <button id="Button9" type="button" class="btn btn-primary">Granja</button>
+        
+        <img
+        class="rounded-circle mx-auto logo m-3"
+        src="/img/dalias.png"
+        alt="Logo"
+      />
+    </div>
+    <div class="card">
+      <div class="card-header text-center" style="background-color: #f59218;">
+        <h3 class="text-white" style="margin-top: 10px;">Nuevo pedido</h3>
+      </div>
+      <div class="card-body text-right">
+        <form action="/notes/new-note" method="POST">
+          <div class="mb-3">
+            <label for="title" style="color: black;">Titulo:</label>
+            <input id="1" type="text" name="title" class="form-control" placeholder="Title" />
+          </div>
+          <div class="mb-3">
+            <label for="description" style="color: black;">Descripción:</label>
+            <textarea id="2" name="description" class="form-control" placeholder="Description"></textarea>
+          </div>
+          <button class="btn btn-primary w-100" type="submit">
+            Save
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+<div class="col-md-3 mx-auto p-1 bg-primary d-inline-block">
+  <div class="card">
+    <div class="card-header text-center" style="background-color: #877771">
+      <h3 class="text-white" style="margin-top: 10px;">Selecciona una Mesa</h3>
+      <div class="card-body">
+        <button id="Button1" type="button" class="btn btn-primary">Mesa 1</button>
+        <button id="Button2" type="button" class="btn btn-primary">Mesa 2</button>
+        <button id="Button3" type="button" class="btn btn-primary">Mesa 3</button>
+        <button id="Button4" type="button" class="btn btn-primary">Mesa 4</button>
+        <button id="Button5" type="button" class="btn btn-primary">Mesa 5</button>
+        <button id="Button6" type="button" class="btn btn-primary">Mesa 6</button>
+        <button id="Button7" type="button" class="btn btn-primary">Mesa 7</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ventana-emergente" class="oculto">
+  <p>¿Que acción deseas realizar?</p>
+  <p>Bebida</p>
+  <button id="boton-11" class="btn btn-primary">Chocolate</button>
+  <button id="boton-2" class="btn btn-primary">Cafe</button>
+  <button id="boton-3" class="btn btn-primary">Tinto</button>
+  <button id="boton-4" class="btn btn-primary">Jugo naranja</button>
+  <hr class="my-4" />
+  <p>Huevos</p>
+  <button id="boton-6" class="btn btn-primary">H. Fritos</button>
+  <button id="boton-7" class="btn btn-primary">H. Pericos</button>
+  <button id="boton-8" class="btn btn-primary">H. Revueltos</button>
+  
+  <p>Especificaciones de huevos</p>
+  <button id="boton-10" class="btn btn-primary">H. Tibio</button>
+  
+  <p>Caldo</p>
+  <button id="boton-1" class="btn btn-primary">Caldo de costilla</button>
+  <button id="boton-1" class="btn btn-primary">Caldo de pescado</button>
+  <hr class="my-4" />
+  <button id="boton-guardar" class="boton">Guardar</button>
+  <button id="boton-cancelar" class="botonCancelar">Cancelar</button>
+</div>
+
+
+<div id="ventana-emergente1" class="oculto">
+  <p style="color: white;">¿Que accion quieres realizar?</p>
+  <button id="boton-5" class="btn btn-primary">H. Duros</button>
+  <button id="boton-9" class="btn btn-primary">H. Blanditos</button>
+  <hr class="my-4" />
+  <button id="boton-12" class="boton1">Cancelar</button>
+</div>
+
+
+<script>
+  
+  const ventanaEmergente = document.getElementById("ventana-emergente");
+  const ventanaEmergente1 = document.getElementById("ventana-emergente1");
+  const boton1 = document.getElementById("boton-1");
+  const boton2 = document.getElementById("boton-2");
+  const boton3 = document.getElementById("boton-3");
+  const boton4 = document.getElementById("boton-4");
+  const boton5 = document.getElementById("boton-5");
+  const boton6 = document.getElementById("boton-6");
+  const boton7 = document.getElementById("boton-7");
+  const boton8 = document.getElementById("boton-8");
+  const boton9 = document.getElementById("boton-9");
+  const boton10 = document.getElementById("boton-10");
+  const boton12 = document.getElementById("boton-12");
+  const botonGuardar = document.getElementById("boton-guardar");
+  const botonCancelar = document.getElementById("boton-cancelar");
+
+  boton12.addEventListener("click", accionBoton2);
+  botonGuardar.addEventListener("click", accionBoton1);
+  botonCancelar.addEventListener("click", accionBoton3);
+  boton1.addEventListener("click", agregarMensaje);
+  boton2.addEventListener("click", agregarCafe);
+  boton3.addEventListener("click", agregarTinto);
+  boton4.addEventListener("click", agregarJugoNaranja);
+  boton5.addEventListener("click", agregarHDuros);
+  boton6.addEventListener("click", agregarHFritos);
+  boton7.addEventListener("click", agregarHPericos);
+  boton8.addEventListener("click", agregarHRevueltos);
+  boton9.addEventListener("click", agregarHBlanditos);
+  boton10.addEventListener("click", agregarHTibio);
+
+  var mensajeInput = document.getElementById("2");
+
+  function agregarHTibio () {
+
+    var msj = " \n -H. Tibios."
+        if (mensajeInput.value.endsWith(msj)) {
+          mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+        } else {
+          mensajeInput.value += msj;
+        }
+  }
+  function accionBoton3 (){
+    
+    mensajeInput.value = "";
+    ventanaEmergente.classList.add("oculto");
+  }
+  function disableEggsFritos() {
+    boton7.disabled = true;
+    boton8.disabled = true;
+  }
+  function enableEggsFritos() {
+    boton7.disabled = false;
+    boton8.disabled = false;
+  }
+
+  function agregarHBlanditos () {
+    
+    var msj = " \n -H. Blanditos."
+        if (mensajeInput.value.endsWith(msj)) {
+          
+          mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+        } else {
+          mensajeInput.value += msj;
+          disableEggsFritos();
+        }
+        ventanaEmergente1.classList.add("oculto");
+  }
+
+function agregarHRevueltos (){
+    
+    var msj = " \n -H. Revueltos."
+        if (mensajeInput.value.endsWith(msj)) {
+          
+          mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+        } else {
+          mensajeInput.value += msj;
+        }
+        
+}
+  function agregarHPericos () {
+    
+    var msj = " \n -H. Pericos."
+        if (mensajeInput.value.endsWith(msj)) {
+          
+          mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+        } else {
+          mensajeInput.value += msj;
+        }
+  }
+  function agregarHFritos () {
+    
+    var msj = " \n -H. Fritos."
+        if (mensajeInput.value.endsWith(msj)) {
+          
+          mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+          
+
+        } else {
+          mensajeInput.value += msj;
+          enableEggsFritos();
+          mostrarVentanaEmergente1();
+          
+        }
+        
+  }
+
+  function agregarHDuros (){
+    
+    var msj = " \n -H. Duros."
+        if (mensajeInput.value.endsWith(msj)) {
+          
+          mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+        } else {
+          mensajeInput.value += msj;
+          disableEggsFritos();
+        }
+        ventanaEmergente1.classList.add("oculto");
+  }
+
+  function agregarJugoNaranja() {
+    
+    var msj = " \n -Jugo de Naranja."
+        if (mensajeInput.value.endsWith(msj)) {
+          
+          mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+        } else {
+          mensajeInput.value += msj;
+        }
+  }
+
+  function agregarTinto() {
+    
+        if (mensajeInput.value.endsWith(" \n -Tinto.")) {
+          mensajeInput.value = mensajeInput.value.slice(0, -9);
+        } else {
+          mensajeInput.value += " \n -Tinto.";
+        }
+  }
+
+  function agregarCafe() {
+     
+        if (mensajeInput.value.endsWith(" \n -Cafe.")) {
+          mensajeInput.value = mensajeInput.value.slice(0, -8);
+        } else {
+          mensajeInput.value += " \n -Cafe.";
+        }
+  }
+
+  function mostrarVentanaEmergente1() {
+    ventanaEmergente1.classList.remove("oculto");
+  }
+  function agregarMensaje() {
+        
+        if (mensajeInput.value.endsWith(" \n -Caldo de pescado.")) {
+          mensajeInput.value = mensajeInput.value.slice(0, -20);
+        } else {
+          mensajeInput.value += " \n -Caldo de pescado.";
+        }
+      }
+
+
+  function accionBoton1() {
+    
+    ventanaEmergente.classList.add("oculto");
+  }
+
+  function accionBoton2() {
+
+    mensajeInput.value = mensajeInput.value.slice(0, -14);
+    ventanaEmergente1.classList.add("oculto");
+    
+    
+  }
+
+</script>

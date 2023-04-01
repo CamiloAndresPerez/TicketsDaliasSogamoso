@@ -1,12 +1,8 @@
 body {
-  background: #f12711;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f5af19, #f12711);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  
+  background: #A770EF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
 }
 
 .logo {
@@ -16,13 +12,125 @@ body {
 .bg-black {
   background: #BA8B02;
 }
+
 .btn {
- 
+  background-color: #342315;
   text-decoration: none;
   border-radius: 15px;
   border: black;
   margin-top: 8px;
 }
-.btn:hover{
+
+.btn:hover {
   background-color: #f59218;
+}
+
+.oculto {
+  display: none;
+}
+
+#ventana-emergente {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 600px;
+}
+
+
+#ventana-emergente1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #877771;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 600px;
+}
+
+.boton {
+  background-color: #005326; 
+  border: none; 
+  color: white; 
+  padding: 12px 24px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin-top: 4px; 
+  margin-left: 115px;
+  margin-right: 10px;
+  cursor: pointer; 
+  border-radius: 8px; 
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+  transition: background-color 0.3s ease; 
+  
+}
+.boton1 {
+  background-color: #970a1b; 
+  border: none; 
+  color: white; 
+  padding: 12px 24px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 73px; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+  transition: background-color 0.3s ease; 
+  
+}
+
+.botonCancelar {
+  background-color: #970a1b; 
+  border: none; 
+  color: white; 
+  padding: 12px 24px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 5px; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+  transition: background-color 0.3s ease; 
+  
+}
+
+.boton:hover {
+  background-color: #0a2000; 
+}
+
+
+.boton1:hover {
+  background-color: #6d091b; 
+}
+
+.botonCancelar:hover {
+  background-color: #6d091b; 
+}
+.card{
+  border-radius: 25px;  
+}
+
+.col-md-4{
+  border-radius: 25px;
+}
+
+.col-md-3{
+  border-radius: 25px;
+}
+.card-header{
+  border-radius: 25px;
 }
